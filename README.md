@@ -1,7 +1,7 @@
 # Wishlist
 
 ## Install packages
-Run npm install to download all the dependent packages.
+Run `npm install` to download all the dependent packages.
 
 ## Run the App
 Run `npm start` to start the wishlist application. The application starts at the url "http://localhost:4200/"
