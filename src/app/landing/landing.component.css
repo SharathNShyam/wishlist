@@ -1,0 +1,42 @@
+.component {
+    padding: 20px;
+    text-align: center;
+    color: #eee;
+    background-color: #607D8B;
+    border-radius: 2px;
+    height: 30px;
+    width: 120px;
+    position: relative;
+}
+
+.component:hover {
+    background-color: #EEE;
+    cursor: pointer;
+    color: #607d8b;
+}
+
+.buttn {
+    width: 120px;
+    height: 40px;
+    font-size: large;
+    color: white;
+    background-color: #607D8B;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    bottom: -4px;
+    min-width: 2px;
+    text-align: center;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.buttn:hover {
+    background-color: #EEE;
+    cursor: pointer;
+    color: #607d8b;
+}
+
+.container {
+    text-align: center;
+    margin-top: 40px;
+}

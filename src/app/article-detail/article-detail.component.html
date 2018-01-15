@@ -1,0 +1,37 @@
+<mat-card class="article-card" *ngIf="article.url">
+    <mat-card-header>
+        <!--img mat-card-avatar src={{article.image}}-->
+        <mat-card-title class="title">{{article.suggestion}}</mat-card-title>
+        <mat-card-subtitle>{{article.subTitle}}</mat-card-subtitle>
+        <div *ngIf="isWishlist==false" class="rat-rev-right">
+            <a *ngIf="favorite==false"><i class="fa fa-heart-o fa-1x" (click)="onAddToBasket()"></i></a>
+            <a *ngIf="favorite"><i class="fa fa-heart fa-1x"></i></a>
+            <!--button class="basket" (click)="onAddToBasket()">Add to Wishlist</button-->
+        </div>
+        <div *ngIf="isWishlist" class="rat-rev-right">
+            <button class="basket" (click)="removeArticle()">Remove</button>
+        </div>
+    </mat-card-header>
+    <img mat-card-md-image src={{article.image}} alt="Photo of a Adidas article">
+    <div class="rat-rev">
+        <mat-card-content class="cardcontent">
+            <div class="price" *ngFor="let price of getJson(article.separatedSalePrice)">
+                {{price.value}}
+            </div>
+        </mat-card-content>
+        <mat-card-content class="cardcontent">
+            <div class="rat-rev">
+                <span class="fa fa-star checked" *ngIf="article.rating>=1"></span>
+                <span class="fa fa-star checked" *ngIf="article.rating>=2"></span>
+                <span class="fa fa-star checked" *ngIf="article.rating>=3"></span>
+                <span class="fa fa-star checked" *ngIf="article.rating>=4"></span>
+                <span class="fa fa-star checked" *ngIf="article.rating>=5"></span>
+            </div>
+        </mat-card-content>
+        <mat-card-content class="cardcontent">
+            <div class="rat-rev" *ngIf="article.reviews">
+                ({{article.reviews}})
+            </div>
+        </mat-card-content>
+    </div>
+</mat-card>

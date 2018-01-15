@@ -1,0 +1,15 @@
+<div>
+    <h3 class="wishlist">
+        Wishlist
+    </h3>
+</div>
+<div class="search-component" *ngIf="articles.length>0">
+    <ul class="search-result" *ngIf="articles.length>0">
+        <li *ngFor="let article of articles">
+            <app-article-detail [article]="article" [isWishlist]=true (delete)="onDeleteArticle()"></app-article-detail>
+        </li>
+    </ul>
+</div>
+<div *ngIf="articles.length<=0">
+    <h2>Your wishlist is empty</h2>
+</div>

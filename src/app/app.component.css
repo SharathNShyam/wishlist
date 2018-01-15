@@ -1,0 +1,18 @@
+.banner {
+    background-color: #EEE;
+    cursor: pointer;
+    color: #607d8b;
+    padding: 15px 15px 15px 15px;
+    position: relative;
+}
+
+.cart {
+    display: block;
+    background: linear-gradient(90deg, #000 30%, transparent 50%), linear-gradient(180deg, #000 0, #363738);
+    background-image: linear-gradient(90deg, rgb(0, 0, 0) 30%, transparent 50%), linear-gradient(rgb(0, 0, 0) 0px, rgb(54, 55, 56));
+    background-color: initial;
+    width: 100%;
+    background-color: #EEE;
+    position: relative;
+    margin-top: 40px;
+}

@@ -1,0 +1,13 @@
+<div class="search-component">
+    <input class="article" #searchBox placeholder="Enter your article name" (keyup)="getNextArticle(searchBox.value)">
+    <div class="cart">
+        <a routerLink="/wishlist">
+            <i class="fa fa-shopping-cart fa-3x" style="float:right"></i>
+        </a>
+    </div>
+    <ul class="search-result" *ngIf="articles">
+        <li *ngFor="let article of articles">
+            <app-article-detail [article]="article" [isWishlist]=false></app-article-detail>
+        </li>
+    </ul>
+</div>

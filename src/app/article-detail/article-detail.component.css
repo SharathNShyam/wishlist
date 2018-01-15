@@ -1,0 +1,67 @@
+.article-card {
+    width: 95%;
+    margin: 10px 10px 10px 10px;
+}
+
+.article-card:hover {
+    -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
+    box-shadow: 2px 2px 1px rgba(34, 34, 34, 0.6);
+}
+
+.example-header-image {
+    background-size: cover;
+}
+
+.checked {
+    color: orange;
+}
+
+.cardcontent {
+    margin: 15px 5px 5px 5px;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(2, 12, 22);
+}
+
+.rat-rev {
+    display: inline-block;
+    width: 300px;
+}
+
+.rat-rev-right {
+    margin-right: 10%;
+    float: right;
+    color: black;
+}
+
+.mat-card-header {
+    display: inline;
+    margin: 0%;
+}
+
+.basket {
+    display: inline-block;
+    font-size: small;
+    color: rgb(27, 24, 24);
+    background-color: lightgreen;
+    line-height: 0.5em;
+    position: relative;
+    left: -1px;
+    top: -3px;
+    height: 40px;
+    min-width: 16px;
+    text-align: right;
+    margin-right: .8em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.price {
+    float: left;
+    margin-bottom: 10%;
+    color: black;
+}
