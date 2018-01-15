@@ -1,31 +1,30 @@
 # Wishlist
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
+## Install packages
+Run npm install to download all the dependent packages.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Run the App
+Run `npm start` to start the wishlist application. The application starts at the url "http://localhost:4200/"
 
-## Code scaffolding
+## Landing Page
+Click on the "Search" button to search for articles
+Click on the "Wishlist" button to view the list of articles added to wishlist
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+## Search Page
+Enter the search string and you will get a list of articles matching your search string
+Click on the "Welcome to Store!" header to navigate to Home page or the Landing page
 
-## Build
+## Add to Wishlist
+CLick on the heart shaped button present on the right end of the article card
+This adds the article to the wishlist
+Click on the Wishlist (Cart icon) to view the list of items added to Wishlist
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## WishList page
+1. Click on the Cart icon if you are in the "Search" Page
+2. Click on the Wishlist button if you are on the home page or the landing page
+You will see the list of items added to wishlist
+Click on the "Remove" button to remove the article from the wishlist
+Click on the "Welcome to Store!" header to navigate to Home page or the Landing page
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to GitHub Pages
-
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
