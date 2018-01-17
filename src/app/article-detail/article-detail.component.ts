@@ -25,6 +25,9 @@ export class ArticleDetailComponent implements OnInit {
     }
 
     ngOnInit(): void {
+      if(this.appService.getArticlesInWishlist().find(z=>z.url==this.article.url)) {
+            this.favorite = true;
+        }
     }
     getJson(priceValue: string): Currency[] {
         var res = JSON.parse(priceValue);
