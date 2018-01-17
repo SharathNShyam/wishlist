@@ -18,7 +18,7 @@ export class AppService {
 
   private searchUrl = 'https://www.adidas.co.uk/api/suggestions/';
   private articlesUrl = 'api/articles';
-  private wishListArticles : Article[];
+  private wishListArticles : Article[] =[];
 
   constructor(private httpClient: HttpClient, private http: Http) { }
 
