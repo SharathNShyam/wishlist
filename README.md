@@ -1,5 +1,9 @@
 # Wishlist
 
+# Install the external dependencies
+Download NodeJs and NPM from the below link based on the platform,
+https://nodejs.org/download/release/v6.11.5/
+
 ## Install packages
 Run `npm install` to download all the dependant packages.
 
